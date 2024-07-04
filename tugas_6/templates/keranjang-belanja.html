@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Kulinerku </h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/menu">Menu</a>
+            <a href="/keranjang-belanja">Pesanan Saya</a>
+            <a href="/login">Profil</a>
+        </nav>
+    </header>
+    <div class="cart">
+        <div class="cart-item">
+            <p>Ayam Lalapan - Rp xxxxx - Qty: 1</p>
+            <button>Hapus</button>
+        </div>
+        <div class="cart-item">
+            <p>Nasii Goreng - Rp xxxx - Qty: 2</p>
+            <button>Hapus</button>
+        </div>
+        <p>Total Harga: Rp.xxxx </p>
+        <a href ="/menu"><button>Tambah Pesanan</button></a>
+       <a href ="/konfirmasi-pesanan"><button>Checkout</button></a>
+    </div>
+
+</body>
+</html>

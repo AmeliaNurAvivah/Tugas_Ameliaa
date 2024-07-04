@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi Pesanan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Kulinerku </h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/menu">Menu</a>
+            <a href="/keranjang-belanja">Pesanan Saya</a>
+            <a href="/login">Profil</a>
+        </nav>
+    </header>
+    <div class="confirmation">
+        <h2>Rincian Pesanan</h2>
+        <p> Nasi Goreng - Harga: Rp. xxxx</p>
+        <p> Ayam Lalapan - Harga: Rp.xxxx</p>
+        <h2>Informasi Pengiriman</h2>
+        <label for="address">Alamat:</label>
+        <input type="text" id="address" placeholder ="Masukkan alamat yang sesuai"></p>
+        <label for="number">No hp:</label>
+        <input type="text" id="number" placeholder = "Masukkan nomor telepon yang aktif">
+        <p>Total Harga: Rp. xxxxxx</p>
+        <a href ="/status-pesanan"><button>Konfirmasi Pesanan</button></a>
+        
+    </div>
+
+</body>
+</html>
